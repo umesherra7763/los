@@ -1,0 +1,36 @@
+[
+  {
+    "patient_id": "NEW-001",
+    "age": 50,
+    "gender": "Male",
+    "department": "General Surgery",
+    "admission_date": "2026-03-10",
+    "discharge_date": "2026-03-27",
+    "length_of_stay": 17,
+    "los_category": "Very Long (>14d)",
+    "severity_of_illness": 2,
+    "has_infection": 1,
+    "surgery_performed": 0,
+    "status": "infected",
+    "days_left": 17,
+    "days_in": 0,
+    "model_used": "Linear Regression"
+  },
+  {
+    "patient_id": "NEW-002",
+    "age": 24,
+    "gender": "Male",
+    "department": "Cardiology",
+    "admission_date": "2026-03-10",
+    "discharge_date": "2026-03-24",
+    "length_of_stay": 14,
+    "los_category": "Long (8-14d)",
+    "severity_of_illness": 3,
+    "has_infection": 1,
+    "surgery_performed": 0,
+    "status": "critical",
+    "days_left": 14,
+    "days_in": 0,
+    "model_used": "Linear Regression"
+  }
+]

@@ -1,0 +1,52 @@
+=============================================================
+HOW TO RUN THE MEDICORE BED MANAGEMENT DASHBOARD
+=============================================================
+
+STEP 1 — Make sure all these files are in the SAME folder:
+    bed_management_app.py
+    model_bundle.pkl
+    synthetic_hospital_data.csv
+    hospital_occupancy_timeseries.csv
+    requirements.txt
+
+STEP 2 — Install dependencies:
+    pip install -r requirements.txt
+
+    OR install individually:
+    pip install streamlit pandas numpy scikit-learn plotly
+
+STEP 3 — Run the app:
+    streamlit run bed_management_app.py
+
+STEP 4 — It opens automatically in your browser at:
+    http://localhost:8501
+
+=============================================================
+HOW TO USE THE DASHBOARD
+=============================================================
+
+1. LEFT SIDEBAR:
+   - Select ML Model (Linear Regression is best)
+   - Fill in new patient details
+   - Click "PREDICT LOS & ADMIT"
+
+2. MAIN SCREEN:
+   - See the LOS prediction instantly (e.g. "8 days")
+   - See the discharge date calculated automatically
+   - See the bed map update with a purple (★ ML) bed
+   - See the patient appear in "Discharging Soon" list
+   - See the 7-day discharge forecast update
+
+3. BED MAP:
+   - Each rectangle = one bed
+   - Hover over any rectangle to see patient details
+   - Colours: Red=Critical, Amber=Infected, Blue=Surgery,
+              Green=Discharging soon, Purple=ML Predicted,
+              Dashed=Available
+
+4. CHARTS:
+   - 14-Day occupancy trend
+   - Department occupancy bar chart
+   - 7-Day discharge forecast
+
+=============================================================
